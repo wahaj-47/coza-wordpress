@@ -1,0 +1,262 @@
+/*
+Theme Name: Coza Store
+Author: Wahaj Hussain
+Version: 1.0
+Description: Theme created from free template of Coza store
+*/
+
+/*Slick Slider*/
+
+.slider {
+    height: calc(100vh - 40px) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*Navbar*/
+
+.navbar-brand {
+    font-weight: 700;
+    font-family: 'Arial';
+    font-size: 2em;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar li{
+    margin: 10px;
+}
+
+.navbar li a:link,
+.navbar li a:visited{
+    color: steelblue;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.navbar li a:link:hover,
+.navbar li a:visited:hover {
+    color:  rgb(46, 85, 117);
+}
+
+/*Carousel*/
+
+.text-wrapper {
+    height: 100%;
+    display: flex;
+}
+
+.carousel-text {
+    margin: auto 10%;
+    text-align: center;
+    width: 500px;
+}
+
+.carousel-title {
+    font-family: 'Times New Roman';
+    font-size: 4em;
+}
+
+.carousel-subtitle {
+    font-size: 1.5em;
+}
+
+.carousel-btn a:link,
+.carousel-btn a:visited{
+    color: white;
+}
+
+.carousel-btn {
+    margin: 15px auto;
+    width: 30%;
+    background: steelblue;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.carousel-btn:hover {
+    background: rgb(46, 85, 117);
+}
+
+/*Banner*/
+
+.banner {
+    margin: 20px auto;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.banner a{
+    color: black;
+    text-decoration: none;
+}
+
+.banner-wrapper {
+    position: relative;
+    color: black;
+    margin: 30px;
+    min-width: 200px;
+}
+
+.banner-title {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.banner-subtitle {
+    font-size: 1em;
+    margin: auto;
+}
+
+.banner-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 0;
+}
+
+.banner-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding : 10% 0 0 8%;
+    transition: .5s; 
+}
+
+.banner-container div{
+    transition: 0.3s;
+}
+
+.banner-container:hover {
+    background: rgba(70, 130, 180, 0.5); 
+}
+
+.banner-container:hover div{
+    color: white;
+    transform: scale(1.05);
+}
+
+/*Products*/
+.product-section {
+    padding-top: 23px;
+    padding-bottom: 140px;
+}
+
+.product-container {
+    margin: 0 !important;
+}
+
+.product-container a {
+    text-decoration: none;
+}
+
+.product-title {
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    line-height: 1.466667;
+}
+
+.product-title a {
+    color: #999;
+}
+
+.product-title a:hover{
+    color: steelblue;
+}
+
+.product-price {
+    font-family: 'Poppins-Regular';
+    font-size: 14px;
+    line-height: 1.466667;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.quick-view-btn {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 20px;
+    min-width: 139px;
+    height: 40px;
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-align: center;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.quick-view-btn:hover {
+    border-color: #222;
+    background-color: #222;
+    color: #fff;
+}
+
+.product-img-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.product-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+    -webkit-transition: transform 0.9s ease;
+    -o-transition: transform 0.9s ease;
+    -moz-transition: transform 0.9s ease;
+    transition: transform 0.9s ease;
+}
+
+.product-img-container:hover img{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.product-img-container:hover .quick-view-btn{
+    display: block;
+    bottom: 20px;
+}
+
+.section-title {
+    padding-bottom: 10px;
+    font-family: Poppins-Bold;
+    font-size: 36px;
+    line-height: 1.1;
+    text-transform: uppercase; 
+}
+
+@media (min-width: 992px) {
+    .navbar{
+        position: fixed;
+        z-index:1100;
+        background-color:transparent;
+    }
+
+    .banner{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .banner-wrapper {
+        flex-basis: 30%;
+        margin: 0 !important;
+    }
+}
