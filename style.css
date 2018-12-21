@@ -246,16 +246,33 @@ Description: Theme created from free template of Coza store
 /*Footer Section*/
 footer {
     background: #222;
+    padding-top: 75px;
+    padding-bottom: 32px;
 }
 
 .footer-container {
     color: #fff;
+    padding-bottom: 50px;
 }
 
 .footer-container ul {
     padding: 0;
     list-style: none;
-    margin: 25px 0;
+}
+
+.footer-container li {
+    padding-bottom: 10px;
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    line-height: 1.923;
+}
+
+.footer-container h4 {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    padding-bottom: 30px;
 }
 
 @media (min-width: 992px) {
