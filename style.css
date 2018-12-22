@@ -91,16 +91,17 @@ Description: Theme created from free template of Coza store
 
 .navbar li a:link,
 .navbar li a:visited{
-    color: steelblue;
+    color: #222;
+    font-family: Poppins-Regular;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 15px;
     text-decoration: none;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .navbar li a:link:hover,
 .navbar li a:visited:hover {
-    color:  rgb(46, 85, 117);
+    color:  #717fe0;
 }
 
 /*Carousel*/
