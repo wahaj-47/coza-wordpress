@@ -2,41 +2,30 @@
         <footer>
             <div class="container">
                 <div class="row">
+                    <?php if(is_active_sidebar("footer_1")) :?>
                     <div class="footer-container col-sm-6 col-lg-3">
-                        <h4>Categories</h4>
-                        <ul>
-                            <li>Women</li>
-                            <li>Men</li>
-                            <li>Shoes</li>
-                            <li>Watches</li>
-                        </ul>
+                        <?php dynamic_sidebar('footer_1') ?>
                     </div>
+                    <?php endif; ?>
+                    <?php if(is_active_sidebar("footer_2")) :?>
                     <div class="footer-container col-sm-6 col-lg-3">
-                        <h4>Help</h4>
-                        <ul>
-                            <li>Track Order</li>
-                            <li>Returns</li>
-                            <li>Shipping</li>
-                            <li>FAQs</li>
-                        </ul>
+                        <?php dynamic_sidebar('footer_2') ?>
                     </div>
+                    <?php endif; ?>
+                    <?php if(is_active_sidebar("footer_3")) :?>
                     <div class="footer-container col-sm-6 col-lg-3">
-                        <h4>Get in touch</h4>
-                        <ul>
-                            <li>Women</li>
-                            <li>Men</li>
-                            <li>Shoes</li>
-                            <li>Watches</li>
-                        </ul>
+                        <?php dynamic_sidebar('footer_3') ?>
                     </div>
+                    <?php endif; ?>
+                    <?php if(is_active_sidebar("footer_4")) :?>
                     <div class="footer-container col-sm-6 col-lg-3">
-                        <h4>Newsletter</h4>
-                        <ul>
-                            <li>Women</li>
-                            <li>Men</li>
-                            <li>Shoes</li>
-                            <li>Watches</li>
-                        </ul>
+                        <?php dynamic_sidebar('footer_4') ?>
+                    </div>
+                    <?php endif; ?>
+                </div>
+                <div class="row">
+                    <div class="copyrights">
+                        <?php dynamic_sidebar('footer_5') ?>
                     </div>
                 </div>
             </div>

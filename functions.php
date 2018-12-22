@@ -27,38 +27,36 @@
         'header' => __('Primary Menu'),
     ) );
     function widgets_init() {
-    register_sidebar( array(
-        'name'          => 'Footer 1',
-        'id'            => 'footer_1',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="ttl">',
-        'after_title'   => '</h4>',
-    ) );
-    register_sidebar( array(
-        'name'          => 'Footer 2',
-        'id'            => 'footer_2',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="ttl">',
-        'after_title'   => '</h4>',
-    ) );
-    register_sidebar( array(
-        'name'          => 'Footer 3',
-        'id'            => 'footer_3',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="ttl">',
-        'after_title'   => '</h4>',
-    ) );
-    register_sidebar( array(
-        'name'          => 'sidebar',
-        'id'            => 'sidebar',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h4 class="ttl">',
-        'after_title'   => '</h4>',
-    ) );
+        register_sidebar( array(
+            'name'          => 'Footer Column 1',
+            'id'            => 'footer_1',
+            'before_title'  => '<h4 class="ttl">',
+            'after_title'   => '</h4>',
+        ) );
+        register_sidebar( array(
+            'name'          => 'Footer Column 2',
+            'id'            => 'footer_2',
+            'before_title'  => '<h4 class="ttl">',
+            'after_title'   => '</h4>',
+        ) );
+        register_sidebar( array(
+            'name'          => 'Footer Column 3',
+            'id'            => 'footer_3',
+            'before_title'  => '<h4 class="ttl">',
+            'after_title'   => '</h4>',
+        ) );
+        register_sidebar( array(
+            'name'          => 'Footer Column 4',
+            'id'            => 'footer_4',
+            'before_title'  => '<h4 class="ttl">',
+            'after_title'   => '</h4>',
+        ) );
+        register_sidebar( array(
+            'name'          => 'Footer Column 5',
+            'id'            => 'footer_5',
+            'before_title'  => '<h4 class="copyrights-title">',
+            'after_title'   => '</h4>',
+        ) );
     }
     add_action( 'widgets_init', 'widgets_init' );
 

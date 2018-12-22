@@ -312,6 +312,7 @@ footer {
 .footer-container {
     color: #fff;
     padding-bottom: 50px;
+    list-style: none;
 }
 
 .footer-container ul {
@@ -319,11 +320,21 @@ footer {
     list-style: none;
 }
 
-.footer-container li {
+.footer-container ul li {
     padding-bottom: 10px;
     font-family: Poppins-Regular;
     font-size: 13px;
     line-height: 1.923;
+}
+
+.footer-container ul li a {
+    text-decoration: none;
+    color: #b2b2b2;
+    transition-duration: 0.4s;
+}
+
+.footer-container ul li a:hover {
+    color: #717fe0;
 }
 
 .footer-container h4 {
@@ -332,6 +343,20 @@ footer {
     line-height: 1.6;
     text-transform: uppercase;
     padding-bottom: 30px;
+}
+
+.copyrights {
+    margin: 0 auto;
+    list-style: none;
+    color: #b2b2b2;
+    text-align: center;
+    font-family: Poppins-Regular;
+    font-size: 13px;
+}
+
+.copyrights-title {
+    font-family: Montserrat-Bold;
+    font-size: 13px;
 }
 
 @media (min-width: 992px) {
