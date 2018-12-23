@@ -83,6 +83,7 @@ Description: Theme created from free template of Coza store
 
 .navbar {
     width: 100%;
+    transition-duration: 0.5s;
 }
 
 .navbar li{

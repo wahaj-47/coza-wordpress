@@ -18,4 +18,11 @@ jQuery(function($) {
         $(slider[nextSlide]).find(".carousel-subtitle").addClass('animated fadeInUp');
         $(slider[nextSlide]).find(".carousel-btn").addClass('animated jackInTheBox');
     });
+
+    $(window).on('scroll',function(){
+        if($(this).scrollTop())
+            $(".navbar").css("background", "#fff");
+        else
+            $(".navbar").css("background", "transparent");
+    });
 });

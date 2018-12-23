@@ -7,8 +7,8 @@
     </head>
     <body <?php body_class()?>>
         <header class="site-header">
-            <div class="container">
-                <nav class="site-nav navbar navbar-expand-lg navbar-light">
+            <nav class="site-nav navbar navbar-expand-lg navbar-light">
+                <div class="container">
                     <a class="navbar-brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -20,8 +20,8 @@
                         'container_id'    => 'navbarLinks',
                         'menu_class' => 'navbar-nav mr-auto'
                     )) ?>
-                </nav>
-            </div> 
+                </div>
+            </nav>
         </header>
     
     
