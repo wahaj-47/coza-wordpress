@@ -129,23 +129,33 @@
         ));
 
         $wp_customize->add_setting('coza-banner-title-'.$id, array(
-            'default' => 'Title Text '.$id
+            'default' => 'Title Text'.$id
         ));
 
         $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'coza-banner-title-control-'.$id, array(
-            'label' => 'Title '.$id,
+            'label' => 'Title'.$id,
             'section' => 'coza-banner',
             'settings' => 'coza-banner-title-'.$id
         )));
 
         $wp_customize->add_setting('coza-banner-subtitle-'.$id, array(
-            'default' => 'Subtitle Text '.$id
+            'default' => 'Subtitle Text'.$id
         ));
 
         $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'coza-banner-subtitle-control-'.$id, array(
-            'label' => 'Subtitle '.$id,
+            'label' => 'Subtitle'.$id,
             'section' => 'coza-banner',
             'settings' => 'coza-banner-subtitle-'.$id,
+        )));
+
+        $wp_customize->add_setting('coza-banner-text-'.$id, array(
+            'default' => 'Text'.$id
+        ));
+
+        $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'coza-banner-text-control-'.$id, array(
+            'label' => 'Text'.$id,
+            'section' => 'coza-banner',
+            'settings' => 'coza-banner-text-'.$id,
         )));
 
         $wp_customize->add_setting('coza-banner-image-'.$id);

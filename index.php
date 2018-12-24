@@ -65,6 +65,11 @@
                 <div class="banner-subtitle">
                     <?php echo get_theme_mod('coza-banner-subtitle-1'); ?>
                 </div>
+                <div class="banner-text-wrapper">
+                    <div class="banner-text">
+                        <?php echo get_theme_mod('coza-banner-text-1'); ?>
+                    </div>
+                </div>
             </div>
         </a>
     </div>
@@ -78,6 +83,11 @@
                 <div class="banner-subtitle">
                     <?php echo get_theme_mod('coza-banner-subtitle-2'); ?>
                 </div>
+                <div class="banner-text-wrapper">
+                    <div class="banner-text">
+                        <?php echo get_theme_mod('coza-banner-text-2'); ?>
+                    </div>
+                </div>
             </div>
         </a>
     </div>
@@ -90,6 +100,11 @@
                 </div>
                 <div class="banner-subtitle">
                     <?php echo get_theme_mod('coza-banner-subtitle-3'); ?>
+                </div>
+                <div class="banner-text-wrapper">
+                    <div class="banner-text">
+                        <?php echo get_theme_mod('coza-banner-text-3'); ?>
+                    </div>
                 </div>
             </div>
         </a>
