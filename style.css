@@ -83,7 +83,7 @@ Description: Theme created from free template of Coza store
 
 .navbar {
     width: 100%;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; 
 }
 
 .navbar li{
@@ -162,7 +162,7 @@ Description: Theme created from free template of Coza store
 /*Banner*/
 
 .banner {
-    margin: 20px auto;
+    margin: 100px auto;
     justify-content: space-between;
     max-width: 1200px;
 }
@@ -259,6 +259,33 @@ Description: Theme created from free template of Coza store
     -o-transform: translateY(0%);
     transform: translateY(0%);
     transition-duration: 0.9s;
+}
+
+/*Categories Filter*/
+.categories {
+    margin-bottom: 50px;
+}
+
+.categories button {
+    font-family: Poppins-Regular;
+    font-size: 15px;
+    line-height: 1.2;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #888;
+    background: none;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.categories button:hover {
+    color: #333;
+    border-color: #797979;
+}
+
+.active-filter {
+    color: #333 !important;
+    border-color: #797979 !important;
 }
 
 /*Products*/

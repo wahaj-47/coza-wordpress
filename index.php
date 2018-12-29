@@ -120,11 +120,23 @@
         $params = array('posts_per_page' => 5, 'post_type' => 'product');
         $wc_query = new WP_Query($params);
     ?>
-    <div class="row">
+
+    <div class="categories filter-button-group">
+        <button class="active-filter">All</button>
+        <?php $product_cat = get_terms('product_cat');
+            foreach($product_cat as $key => $category){ 
+            ?>
+            <button data-filter=".<?php echo strtolower($category->name); ?>">
+                <?php echo $category->name; ?>
+            </button>
+            <?php } ?>
+    </div>
+
+    <div class="row isotope-grid">
     <?php if ($wc_query->have_posts()) : ?>
         <?php while ($wc_query->have_posts()) :
                         $wc_query->the_post(); ?>
-            <div class="product-container col-sm-6 col-md-4 col-lg-3">
+            <div class="product-container isotope-item  <?php $terms = get_the_terms($post->ID, 'product_cat'); foreach ($terms as $category){ echo strtolower($category->name); } ?> col-sm-6 col-md-4 col-lg-3">
                 <div class="product-img-container">
                     <div><?php the_post_thumbnail(); ?></div>
                     <a href="" class="quick-view-btn">Quick View</a>

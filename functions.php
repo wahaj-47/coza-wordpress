@@ -15,6 +15,7 @@
         wp_enqueue_style('slick',  get_template_directory_uri().'/vendor/slick/slick.css');
         wp_enqueue_style('slick-theme',  get_template_directory_uri().'/vendor/slick/slick-theme.css');
         wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+        wp_enqueue_script('isotope', get_template_directory_uri() . '/vendor/isotope/isotope.pkgd.min.js', '3.0.6');
         wp_enqueue_script('cozajs', get_template_directory_uri() . '/js/coza.js');
     };
     add_action('wp_enqueue_scripts', 'load_resources');

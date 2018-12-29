@@ -25,4 +25,16 @@ jQuery(function($) {
         else
             $(".navbar").css("background", "transparent");
     });
+
+    $grid = $(".isotope-grid").isotope({
+        itemSelector: '.isotope-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('.filter-button-group').on( 'click', 'button', function() {
+        $('.filter-button-group button').removeClass('active-filter');
+        $(this).addClass('active-filter');
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
 });
